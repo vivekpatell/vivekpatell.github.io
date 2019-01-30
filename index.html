@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+             <script src="https://sethusenthil.com/Product-Sans/api/font.js"></script>     
+<gfont>
+<style>*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+footer{
+    background-color: #f2f2f2;
+}
+hr{
+  border-top: 1px solid #cbccd3;
+}
+body {
+  font: normal 16px/1.5 "Helvetica Neue", sans-serif;
+  background: #ffffff;
+  color: black;
+  overflow-x: hidden;
+  padding-bottom: 50px;
+}  /* INTRO SECTION
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.vivek{
+    color: white;
+    position: relative;
+    top: 50px;
+}
+.name{
+    position: relative;
+    top: 25px;
+    color: #4e4d4d;
+    background-color:  #f2f2f2;
+}
+.quote{
+    color: #4e4d4d;
+}
+.steve{
+  font-size: 70px;
+ color:white;
+}
+.different{
+  color:white;
+}
+.intro {
+  background-image: url(https://hdqwalls.com/download/ios-11-heritage-stripe-black-4v-2048x1152.jpg) ;
+  padding: 200px;
+  background-repeat: no-repeat;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+/* TIMELINE
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul {
+  background: white;
+  padding: 50px 0;
+ 
+}
+
+.timeline ul li {
+  list-style-type: none;
+  position: relative;
+  width: 6px;
+  margin: 0 auto;
+  padding-top: 50px;
+  background: black;
+  box-shadow: 0px 3px 0px #333,
+                 5px 24px 10px rgba(0,0,0,0.15),
+                 0px 24px 10px rgba(0,0,0,0.1),
+                 0px 34px 30px rgba(0,0,0,0.1);
+
+}
+
+.timeline ul li::after {
+  content: '';
+  position: absolute;
+  left: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  background: inherit;
+  
+}
+
+.timeline ul li div {
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+  background: #f2f2f2;
+  box-shadow: 0px 3px 0px #333,
+                 18px 24px 10px rgba(0,0,0,0.15),
+                 0px 10px 10px rgba(0,0,0,0.1),
+                 0px 20px 10px rgba(0,0,0,0.1);
+  
+}
+
+.timeline ul li div::before {
+  content: '';
+  position: absolute;
+  bottom: 7px;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+
+.timeline ul li:nth-child(odd) div {
+  left: 45px;
+  
+}
+
+.timeline ul li:nth-child(odd) div::before {
+  left: -15px;
+  border-width: 8px 16px 8px 0;
+  border-color: transparent #F45B69 transparent transparent;
+}
+
+.timeline ul li:nth-child(even) div {
+  left: -439px;
+}
+
+.timeline ul li:nth-child(even) div::before {
+  right: -15px;
+  border-width: 8px 0 8px 16px;
+  border-color: transparent transparent transparent #F45B69;
+}
+
+time {
+  
+  display: block;
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+
+/* EFFECTS
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.timeline ul li::after {
+  transition: background .5s ease-in-out;
+}
+
+.timeline ul li.in-view::after {
+  background: #f2f2f2;
+  border: solid black;
+}
+
+.timeline ul li div {
+  visibility: hidden;
+  opacity: 0;
+  transition: all .5s ease-in-out;
+}
+
+.timeline ul li:nth-child(odd) div {
+  transform: translate3d(200px, 0, 0);
+}
+
+.timeline ul li:nth-child(even) div {
+  transform: translate3d(-200px, 0, 0);
+}
+
+.timeline ul li.in-view div {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+
+
+/* GENERAL MEDIA QUERIES
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+@media screen and (max-width: 900px) {
+  .timeline ul li div {
+    width: 250px;
+  }
+  .timeline ul li:nth-child(even) div {
+    left: -289px;
+    /*250+45-6*/
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .timeline ul li {
+    margin-left: 20px;
+  }
+  .timeline ul li div {
+    width: calc(100vw - 91px);
+  }
+  .timeline ul li:nth-child(even) div {
+    left: 45px;
+  }
+  .timeline ul li:nth-child(even) div::before {
+    left: -15px;
+    border-width: 8px 16px 8px 0;
+    border-color: transparent #7a7a7a transparent transparent;
+  }
+}</style>
+<section class="intro">
+  <div class="container">
+    <h1 class= "steve">Steve Jobs  &darr;</h1>
+    <h2 class= "different"> The Man Who Thought  <span style='color: green'>D</span>  <span style='color: yellow'>I</span> <span style='color: orange'>F</span> <span style='color: red'>F</span> <span style='color: purple'>E</span> <span style='color: blue'>R</span> <span style='color: green'>E</span> <span style='color: yellow'>N</span> <span style='color: orange'>T</span></h2>
+    <h3 class="vivek">Vivek Patel</h3>
+  </div>
+</section>
+<hr>
+<section class="timeline">
+  <ul>
+    <li>
+      <div>
+        <time>February 24th 1955 - Steve Jobs was born</time> <hr> Joanne Schieble was 23 years old and found out she was pregnant. She was attending graduate school in Wisconsin. The social customs in the 1950s frowned on women having a child outside of marriage. To avoid this, She moved to San Francisco and was taken in by a doctor who took care of unwed mothers and helps arrange adoptions. Before the baby was born, a lawyer and his wife both agreed to take in the baby. After the baby was born, they changed their minds. Another couple by the names of Clara and Paul Jobs took in the baby and named him Steven Paul.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1972 - College  </time><hr> After going to college for a year and a half, Jobs grades weren't good. His parents did not want to pay for his tuition because he was fooling around. After Jobs was told that, he decided to drop out of Reed at the end of the first semester. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1972 - Atari</time><hr> 
+        In 1972, an early video game maker startup was hiring technicians. They released their first game called Pong which came out to become a huge hit. Being the college dropout, Jobs found an opportunity to make money instead of being homeless. Jobs arrived at the lobby with long hair and ratty clothes and said he won't leave until he got hired. Chief engineer Al Alcorn chatted with Jobs and saw some potential to hire him. Jobs was hired.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1970's - Apple</time><hr> In the 1970s a small company by the name of Intel Corporation developed a single chip that would be used to perform all types of tasks. Meanwhile, Steve Wozniak was working for Hewlett working on calculators. As Wozniak heard the major breakthrough that Intel came out with he decided to make a computer with his best friend Steve Jobs. To make the computer he needed a processor like Intel's. The price of one chip was about $400. Being the broke teenagers they could not afford one. They saw there was an alternative $20 knock-off that would design the chip how they wanted them to. Wozniak pulled together chips, a power supply, a monitor, and a keyboard. As he pressed the keys on the keyboard he saw letters pop up on the screen. Wozniak wanted to show this breakthrough to the hobbyists in the computer club. Jobs did not want to give this idea out for free. Instead, Jobs had a proposal to print circuit boards and sell them to hobbyists who had no time to make circuit boards. To get money to print the board Wozniak sold his H-P calculator for $500 and Jobs sold his Volkswagen bus. Together they made $1,300. Next was time to create a name. Jobs wanted a name that was simple and a name that no one could forget. Jobs always ate apples and named his company Apple.
+
+ 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1977 - Apple II</time><hr> In January 1977, Apple was officially created by Steve Jobs, and Steve Wozniak. They moved out of their garage and moved into a rented office space. They were hiring employees and were busy making the Apple II. In a matter of months, it was time to show the Apple II to the world. They put the computer on display and more than 13,000 people attended the show. That day Apple took home 300,000 orders with each computer costing $1,298. In the first four months, Apple sold $774,000 worth of computers. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1980 - Apple III</time><hr> In the 1980s, Apple came out with the Apple III. The Apple III had several flaws like chips wiggling loose and screws coming off. The company had sold more than 300,000 of Apple III. The company hit a record of $335 million in sales. The Apple III was a big fail but the company still managed to increase in value. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1984 - Macintosh</time><hr> On January 22nd, 1984, it was the day of the Superbowl. Apple had shown an ad announcing that on January 24th Apple will release the Macintosh. This ad became one of the largest and best commercials of all time. On January 24th, Apple showcased the Macintosh. In the first 100 days, about 70,000 computers were sold. This was more than the IBM PC. Over Christmas Apple, sales started to drop. Apple had predicted to sell 150,000 computers but only sold 100,000. People called the Macintosh a toaster due to it overheating and the lack of slots to put the floppy disk in.  In 1985 Apple put up another Super Bowl ad but insulted people who had personal computers.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1985 - Fired</time><hr> In 1985 Steve Jobs got fired from Apple for bringing the company down. Right after he got fired he founded another company by the name of neXT. neXT specializes in making computer software. Jobs felt he was more free and open-minded from all the stress. Jobs also bought another small animation company by the name of Pixar. He was the majority share holder with 50.1% of the stock. (Jobs helped create Toy Story).
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>1997 - Return</time><hr> In 1996 Apple was in need of help. There were too many products and not enough of employees. Some of their laptops were exploding due to faulty batteries. In December 1996, Jobs returns to Apple. With the long break he took away from Apple, he had come back with sales skills. Jobs had ideas on how to make the software more pleasing to use. In late December, Apple bought neXT for $400 million after its failure. This helped Apple with software and many other things.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2000 - Music</time><hr> With all the success of the Macintosh, Jobs had another vision. He had the vision to listen to music without a CD. This was the start of the iPod. At the conference in 2001, Steve Jobs showed the world the iPod. This device was a revolutionary device because it changed the way we all listen to music today. The iPod sold for $399 and sold one million in the first year. While the iPod was popular Jobs had another idea. He had an idea to reach out to music artists and ask them to allow them to sell their music in the store. This was the beginning of iTunes.
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2003 - Cancer</time><hr> In October 2003, Jobs had gone for a Kidney scan. In the picture on the pancreas, the doctors found a tumor. Jobs was devastated when he found out. He will have to leave behind his company that he spent years on. A legend will die. 
+      </div>
+    </li>
+    <li>
+      <div>
+        <time>2007 - iPhone</time><hr> The iPhone was and is the worlds most revolutionary invention to exist. Jobs believed in design and using your fingers. He created the iPhone to navigate it with your fingers so it can be easy. It was the worlds first touch screen flagship to ever exist. It had a simple design and apps that could unveil endless opportunities. This is the invention that no one will forget because it is used by millions of people around the world. 
+      </div>
+    </li>
+  </ul>
+</section>
+<hr>
+<footer>
+    <h2 class="quote">Steve Jobs ~ "Your time is limited, so don't waste it living someone else's life <h3 class="name"> ©️ Vivek Patel</h3></h2>
+</footer>
+
+<script>(function() {
+
+  'use strict';
+
+  // define variables
+  let items = document.querySelectorAll(".timeline li");
+
+  // check if an element is in viewport
+  // http://stackoverflow.com/questions/123999/how-to-tell-if-a-dom-element-is-visible-in-the-current-viewport
+  let isElementInViewport = (el) =>{
+   let rect = el.getBoundingClientRect();
+    return (
+      rect.top >= 0 &&
+      rect.left >= 0 &&
+      rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+      rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+    );
+  },
+
+   callbackFunc = () => {
+    for (var i = 0; i < items.length; i++) {
+      if (isElementInViewport(items[i])) {
+        items[i].classList.add("in-view");
+      }
+    }
+  }
+
+  // listen for events
+  window.addEventListener("load", callbackFunc);
+  window.addEventListener("resize", callbackFunc);
+  window.addEventListener("scroll", callbackFunc);
+
+})();</script>
